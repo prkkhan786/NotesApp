@@ -1,9 +1,13 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 
 Live at - https://prkkhan786.github.io/NotesApp/
 
 PS-  Delete note is not imlimented yet.
+
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
 ## Available Scripts
