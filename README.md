@@ -3,7 +3,7 @@
 
 Live at - https://prkkhan786.github.io/NotesApp/
 
-PS-  Delete note is not imlimented yet.
+PS-  Delete note is not implimented yet.
 
 
 
