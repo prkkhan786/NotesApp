@@ -2,7 +2,7 @@ import React from "react";
 import icons from "glyphicons";
 
 export default function TodoList(props) {
-  const { items, onEdithandler } = props;
+  const { items, onEdithandler ,onDeleteHandler} = props;
   if (items.length === 0) {
     return (
       <div className="App" style={{ position: "relative", top: "50%" }}>
@@ -21,6 +21,7 @@ export default function TodoList(props) {
             <th>Title</th>
             <th>Date</th>
             <th>Edit Note</th>
+            <th>Delete Note</th>
           </tr>
         </thead>
         <tbody>
@@ -35,6 +36,20 @@ export default function TodoList(props) {
                   onClick={() => onEdithandler(item) && this.focus()}
                   style={{ marginLeft: "2%", height: "22px" }}
                   title="Edit Note"
+                >
+                  {" "}
+                  <span style={{ position: "relative", bottom: "8px" }}>
+                    {icons.edit}
+                  </span>
+                </button>
+              </td>
+
+              <td>
+                <button
+                  className="btn btn-outline-danger"
+                  onClick={() => onDeleteHandler(item)}
+                  style={{ marginLeft: "2%", height: "22px" }}
+                  title="Delete Note"
                 >
                   {" "}
                   <span style={{ position: "relative", bottom: "8px" }}>
