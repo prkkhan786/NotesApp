@@ -137,17 +137,13 @@ function App() {
     executeScroll();
   }
 
-  function onDeleteHandler(item){
-    console.log(item)
-
-    const newArray = items.filter(i => item.id!==i.id);
+  function onDeleteHandler(item) {
+    const newArray = items.filter((i) => item.id !== i.id);
     setItems(newArray);
     var key = date.getDate().toString();
     AllNotes[key] = newArray;
     setAllnotes(AllNotes);
     localStorage.setItem("allnotes", JSON.stringify(AllNotes));
-   
-
   }
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
@@ -166,7 +162,11 @@ function App() {
           className="col-sm-6 App"
           style={{ height: "20em", overflow: "scroll" }}
         >
-          <TodoList items={items} onEdithandler={onEdithandler} onDeleteHandler={onDeleteHandler} />
+          <TodoList
+            items={items}
+            onEdithandler={onEdithandler}
+            onDeleteHandler={onDeleteHandler}
+          />
         </div>
       </div>
 

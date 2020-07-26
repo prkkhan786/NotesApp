@@ -2,7 +2,7 @@ import React from "react";
 import icons from "glyphicons";
 
 export default function TodoList(props) {
-  const { items, onEdithandler ,onDeleteHandler} = props;
+  const { items, onEdithandler, onDeleteHandler } = props;
   if (items.length === 0) {
     return (
       <div className="App" style={{ position: "relative", top: "50%" }}>
@@ -17,11 +17,11 @@ export default function TodoList(props) {
       <table className="table sortable" style={{ width: "100%" }}>
         <thead>
           <tr>
-            <th>Sr.No</th>
+            <th>S.No</th>
             <th>Title</th>
             <th>Date</th>
-            <th>Edit Note</th>
-            <th>Delete Note</th>
+            <th>Edit</th>
+            <th>Delete</th>
           </tr>
         </thead>
         <tbody>
